@@ -1,30 +1,58 @@
 import re
-from collections import Counter
 
 def extract_from_regular_expression(regex, data):
-    return re.findall(regex, data) if data else []
+    """Extrae datos de un texto usando una expresión regular."""
+    if data:
+        return re.findall(regex, data)
+    return None
 
-# Expresiones regulares
-regex_ips = r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"  # Extrae IPs
-regex_errores = r'"\s(\d{3})\s'  # Extrae códigos de error HTTP (100-599)
+# Definir expresiones regulares
+regex_ips = r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"  # IPs
+regex_errores = r'"\s(\d{3})\s\d{4,5}\s"'  # Códigos de estado HTTP
 
-# Leer el archivo una sola vez
-with open(r"C:\Users\user\Downloads\access.log", "r") as file:
-    data = file.read()
+# Leer el archivo y extraer datos
+file = open("C:\\Users\\306\\Downloads\\access.log\\access.log", "r")
+contenido = file.read()
+data = contenido
+file.close()
 
-# Extraer IPs y códigos de error
-ips = extract_from_regular_expression(regex_ips, data)
-errores = extract_from_regular_expression(regex_errores, data)
+# Extraer IPs y errores usando las expresiones regulares
+resultado_ips = extract_from_regular_expression(regex_ips, data)
+resultado_errores = extract_from_regular_expression(regex_errores, data)
 
-# Filtrar IPs únicas y contar errores
-ips_unicas = set(ips)  # Elimina duplicados automáticamente
-conteo_errores = Counter(errores)  # Cuenta cuántas veces aparece cada error
+# Convertir errores en enteros
+if resultado_errores:
+    resultado_errores = [int(e) for e in resultado_errores]
 
-# Imprimir resultados
-print("IPs únicas encontradas:")
+# Usamos set para asegurarnos de que solo imprimimos IPs únicas
+ips_unicas = set(resultado_ips) if resultado_ips else set()
+
+# Inicializar contadores de errores
+error_100 = 0
+error_200 = 0
+error_300 = 0
+error_400 = 0
+error_500 = 0
+
+# Contar errores HTTP por categorías
+if resultado_errores:
+    for error in resultado_errores:
+        if 100 <= error < 200:
+            error_100 += 1
+        elif 200 <= error < 300:
+            error_200 += 1
+        elif 300 <= error < 400:
+            error_300 += 1
+        elif 400 <= error < 500:
+            error_400 += 1
+        elif 500 <= error < 600:
+            error_500 += 1
+
+# Imprimir las IPs únicas
+print("\nIPs únicas encontradas:")
 for ip in ips_unicas:
     print(ip)
 
-print("Conteo de errores HTTP:")
-for codigo, cantidad in sorted(conteo_errores.items()):
-    print(f"Error {codigo}: {cantidad} veces")
+# Imprimir el conteo de errores
+print("\nCantidad de errores HTTP:")
+print(f"100: {error_100}\n200: {error_200}\n300: {error_300}\n400: {error_400}\n500: {error_500}")
