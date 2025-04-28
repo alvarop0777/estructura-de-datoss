@@ -1,0 +1,120 @@
+{
+  "cuartos_de_final_champions_2019": [
+    {
+      "partido": {
+        "local": "Liverpool",
+        "visitante": "Porto",
+        "ida": {
+          "resultado": "2-0",
+          "tarjetas_amarillas": {
+            "Liverpool": ["Henderson"],
+            "Porto": ["Corona", "Marega", "Felipe"]
+          },
+          "tarjetas_rojas": {
+            "Liverpool": [],
+            "Porto": []
+          }
+        },
+        "vuelta": {
+          "resultado": "1-4",
+          "tarjetas_amarillas": {
+            "Porto": ["Pepe", "Corona", "Otávio"],
+            "Liverpool": ["Alexander-Arnold", "Fabinho"]
+          },
+          "tarjetas_rojas": {
+            "Porto": [],
+            "Liverpool": []
+          }
+        },
+        "global": "0-6"
+      }
+    },
+    {
+      "partido": {
+        "local": "Tottenham",
+        "visitante": "Manchester City",
+        "ida": {
+          "resultado": "1-0",
+          "tarjetas_amarillas": {
+            "Tottenham": ["Rose", "Vertonghen"],
+            "Manchester City": ["Fernandinho"]
+          },
+          "tarjetas_rojas": {
+            "Tottenham": [],
+            "Manchester City": []
+          }
+        },
+        "vuelta": {
+          "resultado": "3-4",
+          "tarjetas_amarillas": {
+            "Manchester City": ["Laporte", "Rose", "Wanyama"],
+            "Tottenham": ["Sissoko", "Son", "Llorente"]
+          },
+          "tarjetas_rojas": {
+            "Manchester City": [],
+            "Tottenham": []
+          }
+        },
+        "global": "4-4 (Tottenham avanza por goles de visitante)"
+      }
+    },
+    {
+      "partido": {
+        "local": "Ajax",
+        "visitante": "Juventus",
+        "ida": {
+          "resultado": "1-1",
+          "tarjetas_amarillas": {
+            "Ajax": ["Tagliafico", "van de Beek"],
+            "Juventus": ["Rugani", "Douglas Costa"]
+          },
+          "tarjetas_rojas": {
+            "Ajax": [],
+            "Juventus": []
+          }
+        },
+        "vuelta": {
+          "resultado": "1-2",
+          "tarjetas_amarillas": {
+            "Juventus": ["Matuidi", "Alex Sandro"],
+            "Ajax": ["Blind", "van de Beek"]
+          },
+          "tarjetas_rojas": {
+            "Juventus": [],
+            "Ajax": []
+          }
+        },
+        "global": "3-2 (Ajax)"
+      }
+    },
+    {
+      "partido": {
+        "local": "Barcelona",
+        "visitante": "Manchester United",
+        "ida": {
+          "resultado": "0-1",
+          "tarjetas_amarillas": {
+            "Manchester United": ["Shaw", "Young", "Pogba"],
+            "Barcelona": ["Busquets", "Vidal", "Suárez"]
+          },
+          "tarjetas_rojas": {
+            "Manchester United": [],
+            "Barcelona": []
+          }
+        },
+        "vuelta": {
+          "resultado": "3-0",
+          "tarjetas_amarillas": {
+            "Barcelona": ["Rakitić", "Roberto"],
+            "Manchester United": ["Young", "Lingard"]
+          },
+          "tarjetas_rojas": {
+            "Barcelona": [],
+            "Manchester United": []
+          }
+        },
+        "global": "4-0 (Barcelona)"
+      }
+    }
+  ]
+}
