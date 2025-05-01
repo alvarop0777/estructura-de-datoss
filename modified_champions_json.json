@@ -1,0 +1,60 @@
+{
+  "cuartos_de_final_champions_2019": [
+    {
+      "local": "Liverpool",
+      "visitante": "Porto",
+      "resultado_ida": "2-0",
+      "resultado_vuelta": "1-4",
+      "global": "0-6",
+      "clasificado": "Liverpool",
+      "tarjetas": {
+        "amarillas_local": 3,
+        "amarillas_visitante": 6,
+        "rojas_local": 0,
+        "rojas_visitante": 0
+      }
+    },
+    {
+      "local": "Tottenham",
+      "visitante": "Manchester City",
+      "resultado_ida": "1-0",
+      "resultado_vuelta": "3-4",
+      "global": "4-4 (por goles de visitante)",
+      "clasificado": "Tottenham",
+      "tarjetas": {
+        "amarillas_local": 5,
+        "amarillas_visitante": 4,
+        "rojas_local": 0,
+        "rojas_visitante": 0
+      }
+    },
+    {
+      "local": "Ajax",
+      "visitante": "Juventus",
+      "resultado_ida": "1-1",
+      "resultado_vuelta": "1-2",
+      "global": "3-2",
+      "clasificado": "Ajax",
+      "tarjetas": {
+        "amarillas_local": 4,
+        "amarillas_visitante": 4,
+        "rojas_local": 0,
+        "rojas_visitante": 0
+      }
+    },
+    {
+      "local": "Barcelona",
+      "visitante": "Manchester United",
+      "resultado_ida": "0-1",
+      "resultado_vuelta": "3-0",
+      "global": "4-0",
+      "clasificado": "Barcelona",
+      "tarjetas": {
+        "amarillas_local": 5,
+        "amarillas_visitante": 5,
+        "rojas_local": 0,
+        "rojas_visitante": 0
+      }
+    }
+  ]
+}
